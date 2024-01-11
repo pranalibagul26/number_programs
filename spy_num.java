@@ -9,7 +9,7 @@ public static void main(String[]args)
 
 while(n>0)//132>0
 {
- int rem=n%10;          //2 //5 //1 //ek ek digit nikalna hai
+ int rem=n%10;          //2 //5 //1 //
  sum=sum+rem;           //0+2=2 //2+5=7 //
  prod=prod*rem;         //1*2=2 //2*5=6
  n=n/10;           	 //updating value of n to come out of loop
