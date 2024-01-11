@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+class Armstrong
+{
+public static void main(String[] args)
+{
+	Scanner sc=new Scanner(System.in);
+	System.out.print("Enter a number:");
+	int a=sc.nextInt();
+	int a1=a;
+	int a2=a;
+	int count=0;
+	int sum=0;
+
+	while(a1>0)              //count
+	{
+	int rem=a1%10;
+	count++;
+	a1=a1/10;
+	}
+
+	while(a2>0)      //product and sum
+	{
+	int rem1=a2%10;
+	int product=1;
+	for(int i=1;i<=count;i++)
+	{      
+		  
+		product=product*rem1;
+	}
+	sum=sum+product;
+	a2=a2/10;
+	}
+
+	if(a==sum)              //check sum and number
+	{
+		System.out.println("number is armstrong");
+	}
+	else
+	{
+		System.out.println("number is not armstrong");
+	}
+
+}
+}
